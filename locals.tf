@@ -6,8 +6,8 @@ locals {
   id                   = random_uuid.oauth-api.result
   value                = "InvokeRole"
   tags                 = [
-    "EssityDescription: This app registration is created by terraform",
-    "EssityOwner: Cloud Enablement Team"
+    "Description: This app registration is created by terraform",
+    "Owner: vvimal44@gmail.com"
   ]
   common_tags = coalesce(var.tags, local.tags)
 }
